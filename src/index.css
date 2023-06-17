@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.google.com/specimen/Roboto+Slab") html {
+  overflow: -moz-scrollbars-vertical;
+  overflow-y: scroll;
+}
+@layer base {
+  body {
+    font-family: Roboto Slab;
+  }
+  li {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    cursor: pointer;
+  }
+}
+
+.content-div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+}
+
+.content-div:hover {
+  background-image: linear-gradient(
+    to right,
+    rgba(173, 191, 231, 0.8),
+    hsla(242, 33%, 84%, 0.8)
+  ) !important;
+}
